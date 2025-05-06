@@ -16,7 +16,7 @@ ECHO PACKING 0003
 dotnet "%Hyouta%" ToVfps4p -b 0x47 --firstalign 0x80 -a 0x1 ".\files\combined_json\combined_0003.json" ".\files\repack\0003"
 ECHO ----------------
 ECHO PACKING TOGETHER
-dotnet "%Hyouta%" ToVfps4p -c BTL_ENEMY_1722 -b 0x7 -a 0x20 -e ".\files\repack" ".\files\BTL_ENEMY_1722.DAT_notlzc"
+dotnet "%Hyouta%" ToVfps4p -c BTL_ENEMY_1722 -b 0x7 --firstalign 0x20 -a 0x1 ".\files\repack" ".\files\BTL_ENEMY_1722.DAT_notlzc"
 ECHO ----------------
 ECHO COMPRESSING
 dotnet "%Hyouta%" tlzc -c --type 2 ".\files\BTL_ENEMY_1722.DAT_notlzc" .\BTL_ENEMY_1722.DAT
